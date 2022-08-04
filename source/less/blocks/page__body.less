@@ -1,0 +1,44 @@
+//шрифт не подключается, отрабатывает сайнс сериф, пути проверила, но все равно что-то не то
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+.font-main() {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@black: #000000;
+
+.page__body {
+  .font-main;
+  width: 320px;
+  margin: 0 auto;
+  background-color: @white;
+  color: @black;
+}
+
+//куда вынести visually hidden не знаю, делать ли для него отдельный файл или как?
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
