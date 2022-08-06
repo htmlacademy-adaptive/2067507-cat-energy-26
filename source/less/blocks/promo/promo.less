@@ -1,26 +1,31 @@
-.text-color-promo () {
-  color: @white;
-}
-
 .promo__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/img/cat-mobile.jpg");
+  background: url("/img/cat-mobile.jpg");
   background-repeat: no-repeat;
   padding-top: 27px;
   padding-left: 36px;
   padding-right: 35px;
 }
 
+.promo__pick-program {
+  width: 280px;
+}
+
+
 .promo__title {
   margin: 0;
   text-align: center;
   .text-color-promo;
+  .titles-weight;
+  .main-title;
 }
 
 .promo__subtitle {
   .text-color-promo;
   text-align: center;
   margin: 0;
+  font-size: 14px;
+  line-height: 14px;
 }
