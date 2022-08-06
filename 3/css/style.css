@@ -415,7 +415,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/img/cat-mobile.jpg");
+  background: url("../img/cat-mobile.jpg");
   background-repeat: no-repeat;
   padding-top: 27px;
   padding-left: 36px;
@@ -465,7 +465,7 @@
   display: block;
 }
 .special-offer__wrapper {
-  background-image: url("/img/cat-catalog.jpg");
+  background-image: url("../img/cat-catalog.jpg");
   background-repeat: no-repeat;
   background-position: center;
   padding-left: 20px;
