@@ -1,6 +1,21 @@
 .example__wrapper {
   padding: 25px 20px 40px 20px;
   background-color: @lightgray;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 42px 0 0 0;
+    background: linear-gradient(to bottom, @white 0 601px, @lightgray 601px);
+    //переделать на тянущийся фон
+    .tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    box-sizing: border-box;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .example__title {
@@ -8,32 +23,106 @@
   line-height: 40px;
   margin: 0;
   .titles-weight;
+  //class
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    .main-title-tablet;
+    margin-bottom: 63px;
+  }
 }
 
 .example__results-list {
   display: grid;
   grid-template-columns: auto auto;
   gap: 32px;
+  //class
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    gap: 42px;
+  }
+}
+
+.example__results-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .example__results-number {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .stats-number-font-tablet;
+  }
 }
 
 .example__results-description {
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .additional-items-text;
+    color: @lightblack;
+    .paragraph-font;
+    text-transform: lowercase;
+  }
 }
 
 .example__text {
   .paragraph-style;
   .paragraph-font;
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    .paragraph-font-tablet;
+    margin-bottom: 54px;
+  }
 }
 
 .example__total-sum {
   .example-text-font;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .header-menu-text;
+  }
 }
 
 .example__range-text {
   .example-text-font;
+}
+
+.example__range-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.example__image-after {
+  display: none;
+}
+
+.example__image-before {
+  display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.example__image-before-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
 }

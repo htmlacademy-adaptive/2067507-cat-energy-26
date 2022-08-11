@@ -1,7 +1,31 @@
 .programs__wrapper {
-  width: 280px;
   margin: 0 auto;
   background-color: @basicgray;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 62px 53px 52px;
+    margin-bottom: 30px;
+    .tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.programs {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+    box-sizing: border-box;
+  }
 }
 
 .programs__title {
@@ -9,6 +33,13 @@
   line-height: 37px;
   text-transform: uppercase;
   .titles-weight;
+  //переделать на класс
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .main-title;
+    margin-bottom: 24px;
+  }
 }
 
 .programs__text {
@@ -17,10 +48,15 @@
   margin: 0;
   padding-bottom: 23px;
   padding-top: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 13px;
   .paragraph-font;
   .paragraph-style;
+
+  @media (min-width: @tablet-width) {
+    .paragraph-font-tablet;
+    color: @black;
+    border: none;
+  }
 }
 
 .programs__button {
@@ -28,4 +64,13 @@
   display: block;
   padding-top: 15px;
   padding-bottom: 18px;
+  .font-button-white;
+  text-transform: uppercase;
+  color: @black;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    .font-button-white-tablet;
+  }
 }
+

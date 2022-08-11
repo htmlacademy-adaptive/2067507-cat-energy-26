@@ -1,7 +1,30 @@
+//класс для серого фона сделать
+.partnership {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .partnership__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 26px 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    .tablet-width;
+    padding: 56px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    box-sizing: border-box;
+    padding: 56px 80px;
+    background-color: @white;
+    position: absolute;
+    left: 190px;
+    top: 151px;
+  }
 }
 
 .partnership__lead {
@@ -12,6 +35,10 @@
   text-transform: uppercase;
   color: @almost-black;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .promo-subtitle-tablet;
+  }
 }
 
 .partnership__address {
@@ -20,4 +47,40 @@
   .paragraph-style-partnership;
   .paragraph-font;
   color: @lightblack;
+
+  @media (min-width: @tablet-width) {
+    .special-offer-paragraph;
+    text-align: end;
+  }
+}
+
+.partnership__map {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.partnership__images-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.partnership__map-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.partnership__map-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }
