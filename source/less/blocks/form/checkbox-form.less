@@ -2,11 +2,20 @@
   padding: 0;
   margin: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .checkbox-form__title {
   .titles-weight;
   .form-subtitles-font;
+
+  @media (min-width: @tablet-width) {
+    .main-title;
+    margin-bottom: 57px;
+  }
 }
 
 .checkbox-form__list {
@@ -14,8 +23,22 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto auto auto auto;
+    gap: 104px;
+  }
 }
 
 .checkbox-form__input-text {
   .input-text;
+
+  @media (min-width: @tablet-width) {
+    .font-button-white-tablet;
+  }
 }

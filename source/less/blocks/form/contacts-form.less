@@ -5,4 +5,32 @@
 .contacts-form__contacts-title {
   .titles-weight;
   .form-subtitles-font;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    .main-title;
+    margin-bottom: 76px;
+  }
+}
+
+.contacts-form__contacts-wrapper {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    gap: 78px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 69px;
+  }
 }

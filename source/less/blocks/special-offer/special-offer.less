@@ -1,12 +1,18 @@
 .special-offer__wrapper {
-  //поидее это декор изображение, но из-за того что блок маленький мне искустенно паддингами приходится его увеличить, я бы лучше сделала в разметку изображение, можно?
-  background-image: url("../img/cat-catalog.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 99px;
-  padding-bottom: 99px;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
 }
 
 .special-offer__title {
@@ -15,4 +21,35 @@
   .paragraph-font;
   text-align: center;
   .special-offer-paragraph;
+  //class
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.special-offer__img-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.special-offer__img {
+  display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  //скрыть потом
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }

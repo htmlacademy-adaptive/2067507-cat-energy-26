@@ -1,0 +1,20 @@
+.nav {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.nav__wrapper {
+  position: absolute;
+  width: 320px;
+  left: -244px;
+  top: 64px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: static;
+    width: auto;
+  }
+}

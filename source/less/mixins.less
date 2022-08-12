@@ -4,9 +4,27 @@
   font-weight: 400;
 }
 
+.tablet-width() {
+  width: 768px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
 .additional-items-text () {
   font-size: 14px;
   line-height: 14px;
+}
+
+.menu-font-tablet() {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo-subtitle-tablet() {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .paragraph-style() {
@@ -15,9 +33,15 @@
   color: @lightblack;
 }
 
-.small-text {
+.small-text() {
   font-size: 14px;
   line-height: 16px;
+}
+
+.copyright-font() {
+  .paragraph-font;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .form-group-text() {
@@ -25,6 +49,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @lightblack;
+}
+
+.catalog-card-font-desktop() {
+  font-size: 20px;
+  line-height: 21px;
 }
 
 .paragraph-style-partnership() {
@@ -81,6 +110,11 @@
   text-transform: uppercase;
 }
 
+.main-title-tablet() {
+  font-size: 60px;
+  line-height: 60px;
+}
+
 .main-title() {
   font-size: 36px;
   line-height: 36px;
@@ -117,6 +151,7 @@
   line-height: 16px;
   text-align: center;
   color: @lightblack;
+  text-transform: none;
 }
 
 .form-border() {
@@ -136,4 +171,65 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @black;
+}
+
+.font-button-white() {
+  font-size: 16px;
+  line-height: 16px;
+}
+.catalog-font-product() {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.green-button () {
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  .text-color-promo;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  .link-decoration;
+  border: none;
+  color: @white;
+}
+
+.order-button-tablet() {
+  display: block;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.green-button-tablet () {
+  .promo-subtitle-tablet;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  .text-color-promo;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  .link-decoration;
+  border: none;
+}
+
+.paragraph-font-tablet() {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-button-white-tablet() {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.stats-number-font-tablet {
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.desktop-with() {
+  width: 1440px;
 }

@@ -1,14 +1,13 @@
-//не понимаю почему на других страницах этот модификатор на кнопки не повлиял
 .button-green {
   background-color: @green;
-  font-size: 14px;
-  line-height: 18px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  .text-color-promo;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  .link-decoration;
-  border: none;
+  width: 280px;
+  .green-button;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: absolute;
+    top: 230px;
+  }
 }
