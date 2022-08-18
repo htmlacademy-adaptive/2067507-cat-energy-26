@@ -2,21 +2,23 @@
   border: none;
   padding-top: 22px;
   padding-bottom: 20px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
-  margin-bottom: 26px;
+  border-bottom: 1px solid @special-grey;
 
   @media (min-width: @tablet-width) {
-    margin-top: 72px;
+    margin-top: 0;
     margin-bottom: 71px;
-    padding: 0;
+    padding: 25px 28px;
+    border: 1px solid @special-light-gray;
   }
 
   @media (min-width: @desktop-width) {
     .form-border;
     padding: 25px 28px;
     margin: 0;
+    height: fit-content;
   }
 }
 

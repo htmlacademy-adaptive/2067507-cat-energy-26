@@ -1,6 +1,16 @@
 //как сделать перенос плейсхолдера на другую строку?
+.note-form {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
 .note-form__field {
   height: 150px;
+
+  @media (min-width: @tablet-width) {
+    height: 174px;
+  }
 }
 
 .note-form__note-title {
@@ -8,15 +18,39 @@
   .form-subtitles-font;
   margin: 0;
   margin-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     .main-title;
     margin-bottom: 76px;
+    padding: 0;
   }
 }
 
 .note-form__form-group {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.note-form__note-wrapper {
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
     margin-bottom: 67px;
   }
 }

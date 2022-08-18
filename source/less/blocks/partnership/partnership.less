@@ -5,15 +5,34 @@
   }
 }
 
+
+//не то получилось, слишком близко
+.partnership__map-google {
+  border: none;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .partnership__wrapper {
+  width: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 26px 20px;
+  padding: 20px 26px;
   margin: 0 auto;
+  //не работает gap
+  gap: 2;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     .tablet-width;
-    padding: 56px 40px;
+    padding: 56px 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,8 +41,9 @@
     padding: 56px 80px;
     background-color: @white;
     position: absolute;
-    left: 190px;
-    top: 151px;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -37,8 +57,14 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    .promo-subtitle-tablet;
+    .font-partnership;
   }
+}
+
+.partnership__address-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: end;
 }
 
 .partnership__address {

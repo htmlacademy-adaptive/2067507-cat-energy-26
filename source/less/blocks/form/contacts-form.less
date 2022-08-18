@@ -1,5 +1,57 @@
+.contacts-form {
+  width: 320px;
+  padding-top: 26px;
+  padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 65px;
+  }
+}
+
+.contacts-form__tel-form-field {
+  background-image: url("../img/form-phone.svg");
+  background-repeat: no-repeat;
+  background-position-x: 175px;
+  background-position-y: center;
+  padding-right: 25px;
+
+  @media (min-width: @tablet-width) {
+    background-position-x: 490px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position-x: 440px;
+  }
+}
+
+.contacts-form__email-form-field {
+  background-image: url("../img/form-mail.svg");
+  background-repeat: no-repeat;
+  background-position-x: 190px;
+  background-position-y: center;
+  padding-right: 25px;
+
+  @media (min-width: @tablet-width) {
+    background-position-x: 510px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position-x: 450px;
+  }
+}
+
 .contacts-form__caption-text {
   padding-right: 8px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 14px;
+  }
 }
 
 .contacts-form__contacts-title {
@@ -7,10 +59,21 @@
   .form-subtitles-font;
   margin: 0;
   margin-bottom: 35px;
+  width: 187px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     .main-title;
     margin-bottom: 76px;
+    width: 630px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    width: 1220px;
   }
 }
 
@@ -19,12 +82,16 @@
   gap: 14px;
   grid-template-columns: 1fr;
   margin-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
-    margin-bottom: 65px;
+    margin: 0;
+    width: 630px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -32,5 +99,8 @@
     gap: 78px;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 69px;
+    padding-left: 110px;
+    padding-right: 110px;
+    width: 1220px;
   }
 }

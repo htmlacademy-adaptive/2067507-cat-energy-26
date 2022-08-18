@@ -1,20 +1,30 @@
 .pagination__wrapper {
-  padding-top: 36px;
+  padding-top: 0;
+  flex-grow: 1;
 }
 
 .pagination__title {
   .main-subtitles;
   .titles-weight;
   text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .pagination__text {
   .paragraph-font;
   color: @lightblack;
   text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     .copyright-font;
+    margin-bottom: 87px;
   }
 }
 
@@ -29,6 +39,10 @@
 
 .pagination__button-wrapper {
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .pagination__show-all {
@@ -36,4 +50,32 @@
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+//будет иконка +
+.pagination__plus-button {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 49px;
+  }
+}
+
+.pagination__taste-text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.pagination__show-100500 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

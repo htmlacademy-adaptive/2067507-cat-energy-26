@@ -1,8 +1,29 @@
+.copyright {
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-left: auto;
+  }
+}
+
 .copyright__link {
   .link-style;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+  }
 }
 
 .copyright__text {
   color: @lightblack;
   .copyright-font;
+  background-image: url("../img/html-logo.svg");
+  background-repeat: no-repeat;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+  background-position-x: 100%;
+  background-position-y: 50%;
 }
