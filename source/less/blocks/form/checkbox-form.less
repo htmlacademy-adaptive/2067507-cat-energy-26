@@ -1,19 +1,32 @@
 .checkbox-form {
-  padding: 0;
+  padding-bottom: 34px;
   margin: 0;
   border: none;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 61px;
   }
 }
 
 .checkbox-form__title {
   .titles-weight;
   .form-subtitles-font;
+  margin: 0;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     .main-title;
+    margin: 0;
     margin-bottom: 57px;
   }
 }
@@ -26,7 +39,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 0;
+    gap: 32px 0;
   }
 
   @media (min-width: @desktop-width) {

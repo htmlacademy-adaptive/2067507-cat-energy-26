@@ -4,14 +4,20 @@
   .main-title;
   margin: 0;
   margin-bottom: 37px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     .main-title-tablet;
     margin-bottom: 54px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 56px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -20,62 +26,73 @@
   .form-items-subtitle;
   margin: 0;
   margin-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     .font-button-white-tablet;
     margin-bottom: 54px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 66px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
 .program-pick__wrapper {
-  padding: 27px 20px 32px 20px;
+  padding: 0;
+  padding-top: 27px;
   box-sizing: border-box;
   border-top: 1px solid @darkgray;
 
   @media (min-width: @tablet-width) {
     border: none;
     padding: 0;
-    padding-top: 67px;
+    padding-top: 65px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
     border: none;
     padding: 0;
     width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-top: 73px;
   }
 }
 
 .program-pick__submit-wrapper {
-  margin-top: 34px;
-  margin-bottom: 21px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 282px auto;
     gap: 61px;
     margin: 0;
-    margin-bottom: 39px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 568px auto;
     gap: 81px;
     margin-bottom: 82px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
 .program-pick__submit-button {
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     width: 282px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -86,8 +103,16 @@
 .program-pick__required-field {
   .paragraph-font;
   .small-text;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     .font-button-white;
+    text-align: start;
+    align-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }

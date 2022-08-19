@@ -12,8 +12,6 @@
 
 .site-list__item {
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
   border-top: 1px solid @border-header;
 
   @media (min-width: @tablet-width) {
@@ -24,15 +22,21 @@
     display: flex;
     align-items: flex-end;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0;
     border: none;
   }
 }
 
 .site-list__item-link {
+  padding-top: 22px;
+  padding-bottom: 24px;
   .link-style;
   .header-menu-text;
   display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media (min-width: @tablet-width) {
     .menu-font-tablet;
@@ -42,5 +46,22 @@
     display: flex;
     align-items: flex-end;
     .font-button-white-tablet;
+  }
+}
+//переделть на псевдоэлемент, есть отступ от линии
+//мб отдельный файл для модификатора нужен?
+.site-list__item--active {
+  position: relative;
+}
+
+.site-list__item--active::after {
+  @media (min-width: @tablet-width) {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: @green;
+    top: 70px;
+    left: 0;
   }
 }

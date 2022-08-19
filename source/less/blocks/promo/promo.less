@@ -10,6 +10,7 @@
   //класс
   margin: 0 auto;
   margin-bottom: 20px;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -24,7 +25,7 @@
     width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
-    margin-top: 111px;
+    margin-top: 0;
   }
 }
 
@@ -53,11 +54,16 @@
     margin-bottom: 41px;
     margin-left: 117px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .promo__subtitle {
   .text-color-promo;
   text-align: center;
+  text-transform: uppercase;
   .additional-items-text;
   margin: 0;
   //добавить класс отдельный

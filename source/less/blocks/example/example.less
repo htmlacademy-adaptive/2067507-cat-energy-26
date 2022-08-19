@@ -1,12 +1,43 @@
+.example {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, @white 0 601px, @lightgray 601px);
+    border-top: 1px solid @border-header;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(to bottom, @white 0 136px, @lightgray 136px);
+    border: none;
+  }
+}
+
+.example__sum {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: fit-content(100%) fit-content(100%);
+  gap: 4px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: fit-content(100%);
+    gap: 0;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto auto;
+    gap: 63px;
+  }
+}
+
 .example__wrapper {
   padding: 25px 20px 40px 20px;
-  background-color: @lightgray;
   margin: 0 auto;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     padding: 42px 0 0 0;
-    background: linear-gradient(to bottom, @white 0 601px, @lightgray 601px);
-    //переделать на тянущийся фон
     .tablet-width;
   }
 
@@ -15,6 +46,8 @@
     box-sizing: border-box;
     padding-left: 110px;
     padding-right: 110px;
+    position: relative;
+    padding-top: 0;
   }
 }
 
@@ -23,12 +56,15 @@
   line-height: 40px;
   margin: 0;
   .titles-weight;
-  //class
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     .main-title-tablet;
     margin-bottom: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 146px;
   }
 }
 
@@ -42,6 +78,7 @@
 
   @media (min-width: @tablet-width) {
     gap: 42px;
+    margin-bottom: 0;
   }
 }
 
@@ -53,7 +90,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 55px;
+    margin-bottom: 75px;
   }
 }
 
@@ -62,6 +102,7 @@
 
   @media (min-width: @tablet-width) {
     .stats-number-font-tablet;
+    margin-bottom: 11px;
   }
 }
 
@@ -82,19 +123,30 @@
   .paragraph-font;
   margin-bottom: 20px;
   margin-top: 0;
+  padding-right: 36px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     .paragraph-font-tablet;
     margin-bottom: 54px;
+    padding-right: 32px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 438px;
+    padding-right: 0;
+    margin-bottom: 69px;
   }
 }
 
 .example__total-sum {
+  margin: 0;
   .example-text-font;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     .header-menu-text;
+    text-align: end;
   }
 }
 
@@ -124,5 +176,13 @@
 
   @media (min-width: @tablet-width) {
     display: inline-block;
+  }
+}
+
+.example__before-after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 110px;
   }
 }

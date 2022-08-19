@@ -1,21 +1,3 @@
-.programs__wrapper {
-  margin: 0 auto;
-  background-color: @basicgray;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: @tablet-width) {
-    padding: 77px 62px 53px 52px;
-    margin-bottom: 30px;
-    .tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: auto;
-  }
-}
-
 .programs {
   @media (min-width: @desktop-width) {
     display: grid;
@@ -25,10 +7,34 @@
     padding-left: 110px;
     padding-right: 110px;
     box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+}
+
+.programs__wrapper {
+  margin: 0 auto;
+  background-color: @basicgray;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-bottom: 53px;
+    .tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
 .programs__title {
+  padding-top: 30px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -39,6 +45,7 @@
   @media (min-width: @tablet-width) {
     .main-title;
     margin-bottom: 24px;
+    padding-top: 0;
   }
 }
 
@@ -56,14 +63,17 @@
     .paragraph-font-tablet;
     color: @black;
     border: none;
+    width: 340px;
+    padding: 0;
+    margin-bottom: 48px;
   }
 }
 
 .programs__button {
   text-align: start;
   display: block;
-  padding-top: 15px;
-  padding-bottom: 18px;
+  padding-top: 19px;
+  padding-bottom: 22px;
   .font-button-white;
   text-transform: uppercase;
   color: @black;
@@ -71,5 +81,7 @@
 
   @media (min-width: @tablet-width) {
     .font-button-white-tablet;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }

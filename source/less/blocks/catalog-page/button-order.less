@@ -10,9 +10,17 @@
   border: none;
   color: @white;
   background-color: @green;
+  flex-grow: 1;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+  }
 
   @media (min-width: @desktop-width) {
     .catalog-card-font-desktop;
     width: 168px;
+    margin-bottom: 40px;
+    flex-grow: 0;
   }
 }
