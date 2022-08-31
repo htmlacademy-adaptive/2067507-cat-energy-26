@@ -11,12 +11,13 @@
 <body class="page__body">
   <header class="main-header header">
     <a class="main-header__logo header__logo" href="">
-      <img class="main-header__logo-icon-tablet" src="img/logo-tablet.svg" width="174" height="52" alt="Собака летит.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
       <img class="main-header__logo-icon" src="img/logo-header-icon.svg" width="34" height="38" alt="Собака летит.">
-      <img class="main-header__logo-text" src="img/logo-header-text.svg" width="101" height="18"
-        alt="Логотип Кэт Энерджи.">
-      <img class="main-header__logo-icon-desktop" src="img/logo-desktop.svg" width="202" height="60"
-        alt="Логотип Кэт Энерджи.">
+      <!-- <img class="main-header__logo-text" src="img/logo-header-text.svg" width="101" height="18"
+        alt="Логотип Кэт Энерджи."> -->
+      </picture>
     </a>
     <nav class="main-header__nav nav main-nav--nojs main-nav--closed">
       <button class="main-header__nav-toggle" type="button">
@@ -179,10 +180,13 @@
           </div>
         </div>
         <div class="example__before-after">
-          <img class="example__image-before" src="img/cat-fat.png" width="280" height="232" alt="Толстый котик.">
-          <img class="example__image-before-tablet" src="img/cat-fat-tablet.png" width="560" height="512"
-            alt="Толстый котик.">
+          <picture>
+          <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2px.png 2x">
+          <img class="example__image-before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280" height="232" alt="Толстый котик.">
+          </picture>
+          <picture>
           <img class="example__image-after" src="img/cat-skinny.png" width="280" height="232" alt="Худой котик.">
+        </picture>
           <div class="example__range-wrapper">
             <span class="example__range-text">Было</span>
             <label class="visually-hidden" for="range"></label>
