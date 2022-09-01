@@ -10,6 +10,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   background-size: 320px auto;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to bottom,
@@ -33,8 +34,25 @@
     padding-right: 110px;
     margin-top: 0;
     position: relative;
-    padding-bottom: 268px;
+    padding-bottom: 350px;
     padding-top: 111px;
+  }
+}
+
+.promo__wrapper::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    width: 720px;
+    height: 694px;
+    background-image: linear-gradient(to bottom,
+    #69b738d9 0 694px),
+      url("../img/cat-desktop.jpg");
+    background-repeat: no-repeat;
+    // z-index: -1;
+    top: -112px;
+    right: 0;
+    z-index: -1;
   }
 }
 
