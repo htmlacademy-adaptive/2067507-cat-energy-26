@@ -9,7 +9,8 @@
 
 .copyright__link {
   .link-style;
-  display: block;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     width: 163px;
@@ -19,11 +20,28 @@
 .copyright__text {
   color: @lightblack;
   .copyright-font;
-  background-image: url("../img/html-logo.svg");
-  background-repeat: no-repeat;
+  // background-image: url("../img/html-logo.svg");
+  // background-repeat: no-repeat;
   padding-top: 8px;
   padding-bottom: 8px;
   display: block;
-  background-position-x: 100%;
-  background-position-y: 50%;
+  // background-position-x: 100%;
+  // background-position-y: 50%;
+}
+
+.copyright__icon {
+  fill: @black;
+}
+
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: @green;
+}
+
+.copyright__link:active .copyright__icon {
+  fill: @green;
+  opacity: 0.3;
 }
