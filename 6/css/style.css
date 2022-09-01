@@ -27,7 +27,7 @@
   overflow: hidden;
 }
 .main-header {
-  background-color: #ffffff;
+  background-color: transparent;
   margin: 0 auto;
 }
 .main-header__nav {
@@ -36,7 +36,7 @@
   align-items: center;
 }
 .main-header__nav-wrapper {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 .main-header__nav-toggle {
   width: 50px;
@@ -254,6 +254,7 @@
     align-items: flex-end;
     font-size: 20px;
     line-height: 30px;
+    color: #ffffff;
   }
 }
 .site-list__item--active {
@@ -268,6 +269,11 @@
     background-color: #68B738;
     top: 70px;
     left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .site-list__item--active::after {
+    background-color: #ffffff;
   }
 }
 .page__body {
@@ -1468,6 +1474,7 @@ img {
   margin: 0 auto;
   margin-bottom: 20px;
   background-size: 320px auto;
+  position: relative;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .promo__wrapper {
@@ -1494,8 +1501,21 @@ img {
     padding-right: 110px;
     margin-top: 0;
     position: relative;
-    padding-bottom: 268px;
+    padding-bottom: 350px;
     padding-top: 111px;
+  }
+}
+@media (min-width: 1440px) {
+  .promo__wrapper::after {
+    position: absolute;
+    content: "";
+    width: 720px;
+    height: 694px;
+    background-image: linear-gradient(to bottom, #69b738d9 0 694px), url("../img/cat-desktop.jpg");
+    background-repeat: no-repeat;
+    top: -112px;
+    right: 0;
+    z-index: -1;
   }
 }
 .promo__pick-program {
