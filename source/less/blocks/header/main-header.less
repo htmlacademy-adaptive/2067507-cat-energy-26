@@ -10,7 +10,12 @@
 }
 
 .main-header__nav-wrapper {
-  .background-color;
+  z-index: 1;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .main-header__nav-toggle {
