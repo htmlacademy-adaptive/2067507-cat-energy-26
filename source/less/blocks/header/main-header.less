@@ -29,11 +29,15 @@
   }
 }
 
+.main-nav--closed {
+  position: relative;
+}
+
 .main-nav--closed .main-header__nav-toggle::before {
   content: "";
   position: absolute;
-  top: 22px;
-  left: 12.5px;
+  top: 50%;
+  left: 50%;
   width: 24px;
   height: 2px;
   background-color: @black;
@@ -61,19 +65,20 @@
   }
 }
 
-//.main-nav--opened - для открытия
+// .main-nav--opened - для открытия
 
 .main-nav--opened .main-header__nav-toggle {
   top: 0;
   right: auto;
   left: 0;
+  position: relative;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 12.5px;
+    top: 50%;
+    left: 50%;
     width: 25px;
     height: 2px;
     background-color: @black;
