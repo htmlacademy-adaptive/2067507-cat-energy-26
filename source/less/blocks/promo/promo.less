@@ -97,12 +97,12 @@
     top: 0;
     left: 50%;
     z-index: -1;
-    //не грузится 2x
-    // @media (min-resolution: 2dppx) {
-    //   background-image: linear-gradient(to bottom,
-    //   #69b738d9 0 694px),
-    //     url("../img/cat-desktop@2x.jpg");
-    // }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom,
+      #69b738d9 50% 100%),
+        url("../img/cat-desktop@2x.jpg");
+    }
   }
 }
 
@@ -147,7 +147,6 @@
   text-transform: uppercase;
   .additional-items-text;
   margin: 0;
-  //добавить класс отдельный
   margin-bottom: 29px;
   width: 320px;
   margin-left: auto;
@@ -161,7 +160,7 @@
     margin-bottom: 20px;
   }
 }
-//переместить на класс
+
 .promo__image {
   margin-bottom: 3px;
   display: block;
@@ -183,7 +182,6 @@
 }
 
 .promo__block-image {
-  //сжатие этой картинки при переполнении
   @media (min-width: @tablet-width) {
     order: 3;
   }
