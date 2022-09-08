@@ -2007,6 +2007,11 @@ img {
     z-index: -1;
   }
 }
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .promo::before {
+    background-image: linear-gradient(to bottom, #69b738d9 50% 100%), url("../img/cat-desktop@2x.jpg");
+  }
+}
 .promo__pick-program {
   font-size: 16px;
   line-height: 20px;
