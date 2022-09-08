@@ -1,11 +1,14 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  // position: relative;
   width: 320px;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 174px 440px;
+    gap: 94px;
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
@@ -19,7 +22,7 @@
     margin-bottom: 0;
     display: grid;
     grid-template-columns: auto auto;
-    gap: 540px;
+    // gap: 540px;
   }
 }
 

@@ -1,6 +1,22 @@
 //класс для серого фона сделать
 .partnership {
   position: relative;
+  width: 100%;
+}
+
+.partnership--background {
+  position: relative;
+}
+
+.partnership--background::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: @basicgray;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 //не то получилось, слишком близко
@@ -39,7 +55,7 @@
     padding: 56px 80px;
     background-color: @white;
     position: absolute;
-    left: 110px;
+    left: 20%;
     top: 50%;
     transform: translateY(-50%);
   }
