@@ -1,10 +1,23 @@
 //класс для серого фона сделать
 .partnership {
-  @media (min-width: @desktop-width) {
-    position: relative;
-  }
+  position: relative;
+  width: 100%;
 }
 
+.partnership--background {
+  position: relative;
+}
+
+.partnership--background::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: @basicgray;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 //не то получилось, слишком близко
 .partnership__map-google {
@@ -33,6 +46,7 @@
   @media (min-width: @tablet-width) {
     .tablet-width;
     padding: 56px 70px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,11 +55,12 @@
     padding: 56px 80px;
     background-color: @white;
     position: absolute;
-    left: 110px;
+    left: 20%;
     top: 50%;
     transform: translateY(-50%);
   }
 }
+
 
 .partnership__lead {
   font-style: normal;

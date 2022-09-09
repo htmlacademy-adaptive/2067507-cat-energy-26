@@ -7,14 +7,20 @@
 
 .nav__wrapper {
   position: absolute;
-  width: 321px;
-  top: 65px;
+  width: 322px;
   left: -251px;
+  top: 65px;
 
 
   @media (min-width: @tablet-width) {
     display: block;
     position: static;
     width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: static;
+    max-width: 500px;
   }
 }
