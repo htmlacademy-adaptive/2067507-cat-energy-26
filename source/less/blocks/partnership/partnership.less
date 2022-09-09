@@ -1,4 +1,3 @@
-//класс для серого фона сделать
 .partnership {
   position: relative;
   width: 100%;
@@ -19,7 +18,6 @@
   z-index: -1;
 }
 
-//не то получилось, слишком близко
 .partnership__map-google {
   border: none;
   display: none;
@@ -37,9 +35,11 @@
   width: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   margin: 0 auto;
-  //не работает gap
+  padding-left: 20px;
+  padding-right: 24px;
   gap: 2;
   box-sizing: border-box;
 
@@ -113,23 +113,3 @@
   display: flex;
   justify-content: center;
 }
-
-// .partnership__map-tablet {
-//   display: none;
-
-//   @media (min-width: @tablet-width) {
-//     display: inline-block;
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     display: none;
-//   }
-// }
-
-// .partnership__map-desktop {
-//   display: none;
-
-//   @media (min-width: @desktop-width) {
-//     display: inline-block;
-//   }
-// }

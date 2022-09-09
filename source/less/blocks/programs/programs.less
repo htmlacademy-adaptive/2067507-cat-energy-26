@@ -35,7 +35,7 @@
   background-image: url("../img/cat-mass.svg");
   background-repeat: no-repeat;
   background-position-x: 13px;
-  background-position-y: 41px;
+  background-position-y: 24px;
 
   @media (min-width: @tablet-width) {
     background-size: 288px 200px;
@@ -56,7 +56,8 @@
   margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 320px;
+  width: 280px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding-left: 30px;
@@ -79,8 +80,8 @@
   padding-left: 71px;
   text-transform: uppercase;
   .titles-weight;
-  //переделать на класс
   margin: 0;
+  padding-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     .main-title;
@@ -88,6 +89,7 @@
     padding-top: 0;
     padding-left: 0;
     width: 300px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,8 +101,8 @@
   box-sizing: border-box;
   border-bottom: 1px solid @darkgray;
   margin: 0;
-  padding-bottom: 23px;
-  padding-top: 22px;
+  padding-bottom: 22px;
+  // padding-top: 22px;
   padding-right: 13px;
   .paragraph-font;
   .paragraph-style;

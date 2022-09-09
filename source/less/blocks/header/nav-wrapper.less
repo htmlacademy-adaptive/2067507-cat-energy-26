@@ -5,11 +5,23 @@
   }
 }
 
+// .nav__wrapper::before {
+//   position: absolute;
+//   content: "";
+//   background-color: @basicgray;
+//   height: 100%;
+//   width: 768px;
+//   left: 0;
+//   z-index: 1;
+// }
+
 .nav__wrapper {
   position: absolute;
-  width: 322px;
-  left: -251px;
+  width: 321px;
+  left: -261px;
   top: 65px;
+  z-index: 2;
+  overflow: hidden;
 
 
   @media (min-width: @tablet-width) {
