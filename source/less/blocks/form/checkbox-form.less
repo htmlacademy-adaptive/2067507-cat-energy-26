@@ -1,5 +1,5 @@
 .checkbox-form {
-  padding-bottom: 34px;
+  padding-bottom: 35px;
   margin: 0;
   border: none;
   padding-top: 0;
@@ -14,7 +14,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 61px;
+    margin-bottom: 60px;
   }
 }
 
@@ -30,6 +30,17 @@
     .main-title;
     margin: 0;
     margin-bottom: 57px;
+    padding-left: 40px;
+    padding-right: 41px;
+    margin-left: 30px;
+    width: fit-content;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
   }
 }
 
@@ -40,12 +51,23 @@
   width: 10000%;
   background-color: @green;
   left: 100%;
-  top: 50%;
+  top: 15px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
     width: 10000%;
     left: -5000%;
+    top: 22px;
+  }
+}
+
+.checkbox-form__item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -53,16 +75,20 @@
   .list-style;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 13px;
+  gap: 12px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 32px 0;
+    gap: 32px 59px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: auto auto auto auto;
-    gap: 104px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 83px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -77,12 +103,16 @@
 .checkbox-form__control-checkbox {
   position: relative;
   display: block;
-  padding-left: 50px;
+  padding-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 59px;
+  }
 }
 
 .checkbox-form__real-input {
   position: absolute;
-  top: 2px;
+  top: -2px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -92,6 +122,7 @@
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
+    top: -5px;
   }
 }
 

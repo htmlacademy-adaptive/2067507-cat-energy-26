@@ -1,6 +1,6 @@
 .special-offer {
   @media (min-width: @desktop-width) {
-    margin-top: 116px;
+    margin-top: 118px;
   }
 }
 
@@ -16,6 +16,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-color: @black;
+  margin-bottom: 35px;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to bottom,
@@ -26,8 +27,9 @@
   @media (min-width: @tablet-width) {
     width: 707px;
     display: flex;
-    justify-content: center;
+    justify-content: unset;
     min-height: 200px;
+    margin-bottom: 76px;
     background-image: linear-gradient(to bottom,
         rgba(104, 183, 56, 0.85) 0 100%),
       url("../img/cat-catalog-tablet.jpg");
@@ -43,6 +45,7 @@
   @media (min-width: @desktop-width) {
     min-height: 288px;
     width: 245px;
+    margin-bottom: 0;
     background-image: linear-gradient(to bottom,
         rgba(104, 183, 56, 0.85) 0 100%),
       url("../img/cat-catalog-desktop.jpg");
@@ -66,16 +69,21 @@
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  padding-top: 0;
+  padding-top: 189px;
 
   @media (min-width: @tablet-width) {
     text-align: start;
-    left: 422px;
+    // left: 424px;
+    padding-top: 74px;
+    margin-left: 422px;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
-    left: 50%;
+    // left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 187px;
   }
 }
 
@@ -87,7 +95,7 @@
   background-size: 78px 80px;
   width: 78px;
   height: 80px;
-  top: 10px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -98,7 +106,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 10px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
   }

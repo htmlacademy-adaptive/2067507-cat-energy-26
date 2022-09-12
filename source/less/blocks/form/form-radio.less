@@ -1,23 +1,27 @@
 .form-radio {
   border: none;
-  padding-top: 22px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 17px;
+  padding-left: 16px;
   padding-right: 20px;
   margin: 0;
   position: relative;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    margin-bottom: 71px;
-    padding: 25px 28px;
+    margin-bottom: 75px;
+    padding: 24px 28px;
     border: 1px solid @special-light-gray;
   }
 
   @media (min-width: @desktop-width) {
     .form-border;
-    padding: 25px 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 25px;
+    padding-bottom: 26px;
     margin: 0;
+    margin-left: 10px;
     height: fit-content;
   }
 }
@@ -50,6 +54,14 @@
 }
 
 .form-radio__item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -72,6 +84,14 @@
   position: relative;
   display: block;
   padding-left: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 58px;
+  }
 }
 
 .form-radio__control-radio:hover .form-radio__real-input {
@@ -90,7 +110,7 @@
 .form-radio__real-input {
   position: absolute;
   top: -3px;
-  left: 0;
+  left: 3px;
   width: 30px;
   height: 30px;
   box-sizing: border-box;
@@ -100,6 +120,12 @@
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
+    top: -5px;
+    left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
   }
 }
 
@@ -109,8 +135,8 @@
   height: 14px;
   position: absolute;
   background-color: @green;
-  top: 7px;
-  left: 7px;
+  top: 6px;
+  left: 8px;
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {

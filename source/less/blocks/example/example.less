@@ -3,7 +3,7 @@
   background-color: @lightgray;
 
   @media (min-width: @tablet-width) {
-    background: linear-gradient(to bottom, @white 0 601px, @lightgray 601px);
+    background: linear-gradient(to bottom, @white 0 619px, @lightgray 619px);
     border-top: 1px solid @border-header;
     background-color: none;
   }
@@ -25,12 +25,16 @@
     display: grid;
     grid-template-columns: fit-content(100%);
     gap: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-
   @media (min-width: @desktop-width) {
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: space-between;
     gap: 63px;
+    margin: 0;
+    padding-right: 40px;
   }
 }
 
@@ -41,6 +45,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 42px 0 0 0;
+    padding-bottom: 99px;
     .tablet-width;
   }
 
@@ -53,6 +58,7 @@
     padding-top: 0;
     display: grid;
     grid-template-columns: auto 560px;
+    padding-bottom: 55px;
   }
 }
 
@@ -65,7 +71,7 @@
 
   @media (min-width: @tablet-width) {
     .main-title-tablet;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,7 +106,7 @@
     display: grid;
     grid-template-columns: auto;
     gap: 55px;
-    margin-bottom: 75px;
+    margin-bottom: 0;
   }
 }
 
@@ -119,7 +125,7 @@
     .stats-number-font-tablet;
     padding-bottom: 20px;
     width: 162px;
-    padding-top: 16px;
+    padding-top: 15px;
     background-size: 162px 72px;
   }
 }
@@ -146,7 +152,7 @@
     color: @lightblack;
     .paragraph-font;
     text-transform: lowercase;
-    margin-top: -11px;
+    margin-top: -9px;
     width: auto;
   }
 }
@@ -164,7 +170,7 @@
     padding-right: 32px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 438px;
     padding-right: 0;
     margin-bottom: 69px;
@@ -179,6 +185,10 @@
   @media (min-width: @tablet-width) {
     .header-menu-text;
     text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }
 
@@ -216,6 +226,11 @@
 .example__before-after {
   display: flex;
   justify-content: center;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .example__slider--before {
@@ -280,4 +295,24 @@
 
 .example__wrapper-desktop {
   margin-bottom: 20px;
+}
+
+.example__button-wrapper {
+  position: absolute;
+}
+
+.example__before-after::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: #666666;
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.example__results-br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
