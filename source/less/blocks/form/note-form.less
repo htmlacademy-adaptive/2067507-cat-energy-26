@@ -7,10 +7,11 @@
 .note-form__field {
   height: 150px;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 8px;
 
   @media (min-width: @tablet-width) {
     height: 174px;
+    padding-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -32,6 +33,18 @@
     .main-title;
     margin-bottom: 76px;
     padding: 0;
+    padding-left: 39px;
+    padding-right: 38px;
+    margin-left: 30px;
+    width: fit-content;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
   }
 }
 
@@ -42,12 +55,13 @@
   width: 10000%;
   background-color: @green;
   left: 100%;
-  top: 50%;
+  top: 15px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
     width: 10000%;
     left: -5000%;
+    top: 22px;
   }
 }
 
@@ -59,15 +73,19 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    padding-left: 70px;
+    padding-right: 67px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .note-form__note-wrapper {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     padding: 0;

@@ -2,15 +2,17 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   margin-bottom: 49px;
   padding-left: 20px;
   padding-right: 20px;
 
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 46px;
     .tablet-width;
+    gap: 32px;
   }
 
 
@@ -19,11 +21,24 @@
     padding-left: 110px;
     padding-right: 110px;
     gap: 32px;
+    margin-bottom: 69px;
   }
 }
 
 .features__br {
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.features__br2 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }
@@ -46,15 +61,15 @@
   gap: 20px;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr 1fr;
-    gap: 37px 153px;
+    grid-template-columns: 247px 248px;
+    gap: 37px 137px;
     counter-reset: section;
   }
 
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 94px;
+    gap: 81px;
   }
 }
 
@@ -78,10 +93,15 @@
   display: flex;
   .paragraph-style;
   .paragraph-font;
+  justify-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     .paragraph-font-tablet;
     position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -93,12 +113,12 @@
   position: relative;
   background-image: url("../img/icon-tub.svg");
   background-position-x: 15px;
-  background-position-y: 10px;
+  background-position-y: 13px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     background-position-x: 25px;
-    background-position-y: 40px;
+    background-position-y: 64px;
   }
 
   @media (min-width: @desktop-width) {
@@ -119,7 +139,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: 20px;
+    top: 40px;
   }
 
 
@@ -133,13 +153,13 @@
 .features__items--eat {
   position: relative;
   background-image: url("../img/icon-eat.svg");
-  background-position-x: 15px;
-  background-position-y: 10px;
+  background-position-x: 18px;
+  background-position-y: 15px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-position-x: 25px;
-    background-position-y: 40px;
+    background-position-x: 27px;
+    background-position-y: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -160,7 +180,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: 20px;
+    top: 40px;
   }
 
 
@@ -174,18 +194,19 @@
 .features__items--fast {
   position: relative;
   background-image: url("../img/icon-alarm.svg");
-  background-position-x: 15px;
-  background-position-y: 10px;
+  background-position-x: 14px;
+  background-position-y: 13px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-position-x: 25px;
-    background-position-y: 40px;
+    background-position-x: 23px;
+    background-position-y: 63px;
   }
 
   @media (min-width: @desktop-width) {
     background-position-x: 25px;
     background-position-y: 60px;
+    width: 245px;
   }
 }
 
@@ -201,7 +222,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: 20px;
+    top: 40px;
   }
 
 
@@ -216,12 +237,13 @@
   position: relative;
   background-image: url("../img/icon-leaf.svg");
   background-position-x: 15px;
-  background-position-y: 10px;
+  background-position-y: 14px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     background-position-x: 25px;
-    background-position-y: 40px;
+    background-position-y: 64px;
+    width: 225px;
   }
 
   @media (min-width: @desktop-width) {
@@ -242,7 +264,7 @@
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: 20px;
+    top: 40px;
   }
 
 

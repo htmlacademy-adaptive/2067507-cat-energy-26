@@ -1,10 +1,17 @@
 .logo-footer {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin-right: auto;
+    margin-right: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 413px;
   }
 }
 
@@ -12,6 +19,15 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 15px;
-  padding-bottom: 12px;
+  padding-top: 19px;
+  padding-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+  }
 }

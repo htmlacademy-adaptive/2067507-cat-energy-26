@@ -1,5 +1,6 @@
 .copyright {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -20,18 +21,25 @@
 .copyright__text {
   color: @lightblack;
   .copyright-font;
-  // background-image: url("../img/html-logo.svg");
-  // background-repeat: no-repeat;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
-  // background-position-x: 100%;
-  // background-position-y: 50%;
+
+
+  @media (min-width: @tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 
 .copyright__icon {
   fill: @black;
-  width: 100%;
+  width: 27px;
 }
 
 .copyright__link:active .copyright__text {
