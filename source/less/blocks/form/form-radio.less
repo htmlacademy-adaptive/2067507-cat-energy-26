@@ -103,7 +103,21 @@
   opacity: 0.3;
 }
 
+.form-radio__control-radio:focus-within .form-radio__real-input {
+  outline: 1px solid @almost-black;
+}
+
 .form-radio__control-radio:active .form-radio__input-text {
+  opacity: 0.3;
+}
+
+.form-radio__disabled .form-radio__input-text {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.form-radio__disabled .form-radio__real-input {
+  border: 1px solid @radio;
   opacity: 0.3;
 }
 

@@ -1,9 +1,14 @@
 .header {
   display: flex;
+  justify-content: center;
+  // grid-template-columns: 240px 50px;
+  // gap: 20px;
   flex-wrap: wrap;
-  // position: relative;
-  width: 320px;
+  position: relative;
+  // width: 320px;
   // overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -12,6 +17,7 @@
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 24px;
     box-sizing: border-box;
   }
 
@@ -21,7 +27,8 @@
     padding-right: 109px;
     margin-bottom: 0;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 202px auto;
+    padding-top: 53px;
   }
 }
 
@@ -30,19 +37,30 @@
   padding-bottom: 16px;
   padding-right: 20px;
   padding-left: 20px;
+  display: block;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    padding-top: 24px;
+    // display: flex;
+    // padding-top: 24px;
+    padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 53px;
+    // padding-top: 53px;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
 }
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+

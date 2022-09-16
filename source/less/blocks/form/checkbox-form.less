@@ -135,7 +135,21 @@
   opacity: 0.3;
 }
 
+.checkbox-form__control-checkbox:focus-within .form-radio__real-input {
+  outline: 1px solid @almost-black;
+}
+
 .checkbox-form__control-checkbox:active .checkbox-form__input-text {
+  opacity: 0.3;
+}
+
+.checkbox-form__disabled .checkbox-form__input-text {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.checkbox-form__disabled .checkbox-form__real-input {
+  border: 1px solid @radio;
   opacity: 0.3;
 }
 
