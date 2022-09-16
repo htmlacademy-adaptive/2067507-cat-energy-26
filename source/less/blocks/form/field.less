@@ -24,6 +24,18 @@
   outline: 2px solid #444444;
 }
 
+.field:focus + .contacts-form__icon {
+  fill: @green;
+}
+
+.field--error:focus {
+  outline: 2px solid @error;
+}
+
+.field--error:focus + .contacts-form__icon {
+  fill: @error;
+}
+
 .field::placeholder {
   @media (min-width: @tablet-width) {
     .font-button-white-tablet;

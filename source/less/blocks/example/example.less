@@ -128,6 +128,11 @@
     padding-top: 15px;
     background-size: 162px 72px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .example__results {
@@ -153,7 +158,7 @@
     .paragraph-font;
     text-transform: lowercase;
     margin-top: -9px;
-    width: auto;
+    width: 127px;
   }
 }
 
@@ -227,6 +232,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  height: fit-content;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 30px;
@@ -315,4 +321,38 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.example__button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.example__button-icon {
+  color: #666666;
+  fill: currentColor;
+}
+
+.example__before-after:hover .example__button-icon {
+  color: @green;
+  fill: currentColor;
+}
+
+.example__before-after:hover.example__before-after::before {
+  background-color: @green;
+}
+
+.example__before-after:active .example__button-icon {
+  color: @green-light;
+  fill: currentColor;
+  opacity: 0.6;
+}
+
+.example__before-after:active.example__before-after::before {
+  background-color: @green-light;
+  opacity: 0.6;
 }
