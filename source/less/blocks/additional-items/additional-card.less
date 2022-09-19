@@ -1,58 +1,3 @@
-.additional-card__title-main {
-  .font-main;
-  .titles-weight;
-  margin-top: 20px;
-  // padding-left: 20px;
-  padding-right: 22px;
-  background-color: @white;
-  position: relative;
-  padding-bottom: 0;
-  margin-bottom: 28px;
-  width: 226px;
-  // box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    .main-title;
-    margin-bottom: 80px;
-    margin-top: 0;
-    border-bottom: none;
-    padding-left: 37px;
-    padding-right: 36px;
-    width: 339px;
-    padding-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 81px;
-    padding-top: 1px;
-    padding-left: 40px;
-    padding-right: 35px;
-    margin-left: -40px;
-  }
-}
-
-.additional-card__title-main::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 10000%;
-  background-color: @green;
-  left: 100%;
-  top: 55%;
-  z-index: -1;
-  overflow: hidden;
-
-  @media (min-width: @tablet-width) {
-    width: 10000%;
-    left: -5000%;
-    top: 59%;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 66%;
-  }
-}
-
 .additional-card__title {
   margin-top: 0;
   margin-bottom: 13px;
@@ -83,7 +28,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    // margin-bottom: 15px;
     padding-top: 0;
   }
 }
@@ -106,7 +50,7 @@
     display: flex;
     width: 286px;
     margin-right: auto;
-    margin-top: 12px;
+    margin-top: 14px;
   }
 }
 
@@ -114,27 +58,25 @@
   border-top: 1px solid @special-grey;
   padding-top: 13px;
   padding-bottom: 18px;
-  // padding-left: 20px;
-  // padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     padding-left: 38px;
     padding-right: 38px;
-    padding-top: 26px;
-    padding-bottom: 28px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    gap: 36px;
-    grid-template-columns: auto auto 244px;
-    width: 894px;
+    gap: 35px;
+    grid-template-columns: 286px 286px 244px;
+    width: 895px;
     box-sizing: border-box;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -149,6 +91,8 @@
 
   @media (min-width: @desktop-width) {
     width: 244px;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 
