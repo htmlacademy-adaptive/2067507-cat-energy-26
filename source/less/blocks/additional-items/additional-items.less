@@ -1,9 +1,8 @@
 .additional-items {
-  border-top: 1px solid @border-header;
   margin-bottom: 34px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    border: none;
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
@@ -18,18 +17,84 @@
   }
 }
 
+.additional-items__title-main {
+  .font-main;
+  .titles-weight;
+  padding-top: 20px;
+  padding-right: 22px;
+  background-color: @white;
+  position: relative;
+  padding-bottom: 29px;
+
+  margin-bottom: 0;
+  width: 226px;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    .main-title;
+    margin-bottom: 79px;
+    margin-top: 0;
+    border-bottom: none;
+    padding-left: 37px;
+    padding-right: 36px;
+    width: 339px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 79px;
+    padding-left: 40px;
+    padding-right: 35px;
+    margin-left: -40px;
+  }
+}
+
+.additional-items::before {
+  position: absolute;
+  content: "";
+  width: 10000%;
+  border-top: 1px solid @border-header;
+  top: 0;
+  left: -5000%;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+
+.additional-items__title-main::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 10000%;
+  background-color: @green;
+  left: 100%;
+  top: 48%;
+  z-index: -1;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    width: 10000%;
+    left: -5000%;
+    top: 59%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 62%;
+  }
+}
+
 .additional-items__wrapper {
-  // padding-left: 20px;
-  // padding-right: 20px;
   width: 280px;
-  // box-sizing: border-box;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 68px;
     padding-top: 0;
     width: 100%;
-    // border-top: 1px solid @special-grey;
     border-left: 1px solid @special-grey;
     border-right: 1px solid @special-grey;
   }
@@ -37,7 +102,7 @@
   @media (min-width: @desktop-width) {
     border: none;
     margin: 0;
-    width: 896px;
-    // border-top: 1px solid @special-grey;
+    width: 895px;
+    margin-bottom: 1px;
   }
 }

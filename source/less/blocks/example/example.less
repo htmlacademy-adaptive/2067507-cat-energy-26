@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: linear-gradient(to bottom, @white 0 136px, @lightgray 136px);
+    background: linear-gradient(to bottom, @white 0 136px, @basicgray 136px);
     border: none;
     background-color: none;
   }
@@ -25,7 +25,7 @@
     display: grid;
     grid-template-columns: fit-content(100%);
     gap: 0;
-    margin-top: 10px;
+    margin-top: 11px;
     margin-bottom: 10px;
   }
 
@@ -88,7 +88,7 @@
 
 
   @media (min-width: @tablet-width) {
-    gap: 42px;
+    gap: 40px;
     margin-bottom: 0;
     padding-right: 0;
     padding-left: 0;
@@ -112,18 +112,16 @@
 
 .example__results-number {
   text-align: center;
-  background-image: url("../img/border.svg");
-  background-size: 124px 56px;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
   padding-top: 14px;
-  padding-bottom: 18px;
+  border-radius: 3px;
+  border: 1px solid @special-grey;
+  padding-bottom: 16px;
   .font-before-after;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     .stats-number-font-tablet;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     width: 162px;
     padding-top: 15px;
     background-size: 162px 72px;
@@ -151,6 +149,8 @@
   width: 77px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 2;
+  background-color: @lightgray;
 
   @media (min-width: @tablet-width) {
     .additional-items-text;
@@ -159,6 +159,13 @@
     text-transform: lowercase;
     margin-top: -9px;
     width: 127px;
+    background-color: @white;
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basicgray;
   }
 }
 
@@ -171,7 +178,7 @@
 
   @media (min-width: @tablet-width) {
     .paragraph-font-tablet;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     padding-right: 32px;
   }
 
@@ -188,7 +195,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    .header-menu-text;
+    .promo-subtitle-tablet;
     text-align: end;
   }
 
@@ -242,7 +249,6 @@
 .example__slider--before {
   left: 50%;
   top: 1px;
-  // transform: translate(-100%, 0);
   width: 50%;
 }
 
@@ -272,7 +278,11 @@
 
 .example__slider .example__image-after {
   position: absolute;
-  transform: translate(-50%, 0);
+  transform: translate(-47%, 0);
+
+  @media (min-width: @tablet-width) {
+    transform: translate(-50%, 0);
+  }
 }
 
 .example__slider--before .example__image-before {
@@ -312,7 +322,7 @@
   position: absolute;
   height: 100%;
   width: 4px;
-  background-color: #666666;
+  background-color: @icons-fill;
   z-index: 2;
   border-radius: 2px;
 }
@@ -327,13 +337,18 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%);
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    top: 46%;
+  }
 }
 
 .example__button-icon {
-  color: #666666;
+  color: @icons-fill;
   fill: currentColor;
 }
 

@@ -13,7 +13,6 @@
 
 .contacts-form::after {
   content: "";
-  height: 100%;
   width: 10000%;
   left: -5000px;
   top: 0;
@@ -27,7 +26,6 @@
 
 .contacts-form__tel-form-field {
   padding-right: 33px;
-  // margin-left: 11px;
 
   @media (min-width: @tablet-width) {
     background-position-x: 490px;
@@ -41,10 +39,6 @@
 
 .contacts-form__form-group {
   position: relative;
-
-  @media (min-width: @desktop-width) {
-    // padding-left: 12px;
-  }
 }
 
 .contacts-form__icon {
@@ -54,28 +48,24 @@
 
 .contacts-form__email-form-field {
   padding-right: 33px;
-  // margin-left: 11px;
 
   @media (min-width: @tablet-width) {
-    background-position-x: 510px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-position-x: 450px;
-    width: 486px;
     margin-left: 5px;
+    padding-left: 20px;
   }
 }
 
 .contacts-form__caption-text {
   padding-right: 11px;
+  max-width: 80px;
 
   @media (min-width: @tablet-width) {
     padding-right: 12px;
+    max-width: 100px;
   }
 
   @media (min-width: @desktop-width) {
-    // padding-right: 18px;
+    padding-right: 14px;
   }
 }
 
@@ -147,13 +137,12 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    gap: 78px;
-    grid-template-columns: 1fr 1fr;
+    gap: 82px;
+    grid-template-columns: 565px 570px;
     margin-bottom: 68px;
     margin-left: 110px;
     margin-right: 110px;
     width: 1220px;
     padding: 0;
-    // padding-left: 7px;
   }
 }

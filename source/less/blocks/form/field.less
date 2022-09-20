@@ -3,16 +3,23 @@
   height: 45px;
   box-sizing: border-box;
   padding: 0;
-  padding-top: 3px;
+  padding-top: 1px;
   padding-left: 15px;
   padding-right: 15px;
   // flex-grow: 1;
   width: 100%;
+  .font-main;
+  .form-mobile;
 
   @media (min-width: @tablet-width) {
     height: 52px;
-    padding-left: 19px;
-    padding-top: 5px;
+    padding-left: 18px;
+    padding-top: 0;
+    .font-button-white-tablet;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 3px;
   }
 }
 
@@ -37,7 +44,21 @@
 }
 
 .field::placeholder {
+  .form-group-text;
+  .font-main;
+  color: @lightblack;
+  opacity: 1;
+
   @media (min-width: @tablet-width) {
     .font-button-white-tablet;
   }
+}
+
+// .field:not(:placeholder-shown) {
+//   .font-button-white-tablet;
+// }
+
+.field::-webkit-outer-spin-button,
+.field::-webkit-inner-spin-button {
+  appearance: none;
 }
