@@ -6,7 +6,6 @@
   padding-top: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  // flex-grow: 1;
   width: 100%;
   .font-main;
   .form-mobile;
@@ -54,11 +53,21 @@
   }
 }
 
-// .field:not(:placeholder-shown) {
-//   .font-button-white-tablet;
-// }
-
 .field::-webkit-outer-spin-button,
 .field::-webkit-inner-spin-button {
   appearance: none;
+}
+
+.field:focus::-webkit-outer-spin-button,
+.field:focus::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.field[type="number"],
+.field[type="number"]:focus {
+  appearance: textfield;
+}
+
+.field[type="number"]:focus {
+  appearance: number-input;
 }
