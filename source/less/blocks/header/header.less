@@ -34,34 +34,34 @@
   text-decoration: none;
   width: 227px;
   box-sizing: border-box;
+}
 
-  &-icon {
-    display: block;
-
-    @media (min-width: @tablet-width) {
-      width: 174px;
-      height: 52px;
-      box-sizing: unset;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 202px;
-      height: 60px;
-    }
-  }
+.header__logo-icon {
+  display: block;
 
   @media (min-width: @tablet-width) {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
+    width: 174px;
+    height: 52px;
+    box-sizing: unset;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
+    width: 202px;
+    height: 60px;
   }
+}
+
+@media (min-width: @tablet-width) {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: @desktop-width) {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header__logo:hover {
