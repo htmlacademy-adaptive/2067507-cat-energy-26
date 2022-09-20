@@ -52,8 +52,15 @@
         </div>
         <div class="promo__block-image">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/promo-image-desktop.png, img/promo-image-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png, img/promo-image-tablet@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/promo-image-desktop.webp 1x, img/promo-image-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/promo-image-tablet.webp 1x, img/promo-image-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/promo-image.webp, img/promo-image@2x.webp 2x" width="280"
+              height="270">
+            <source media="(min-width: 1440px)"
+              srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet@2x.png 2x">
             <img class="promo__image" src="img/promo-image.png" srcset="img/promo-image@2x.png 2x" width="280"
               height="270" alt="Банка питания для котов со вкусом курицы.">
           </picture>
@@ -128,8 +135,11 @@
           <div class="example__slider slider example__slider--before">
             <div class="slider__box slider__box--before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cat-fat-tablet.webp, img/cat-fat-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-fat.webp, img/cat-fat@2x.webp 2x" width="280" height="232">
                 <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png, img/cat-fat-tablet@2x.png 2x">
-                <img class="example__image-before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280"
+                <img class="example__image-before" src="img/cat-fat.png" srcset="img/cat-fat@2x.webp 2x" width="280"
                   height="232" alt="Толстый котик.">
               </picture>
             </div>
@@ -137,6 +147,10 @@
           <div class="example__slider slider example__slider--after">
             <div class="slider__box slider__box--before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cat-skinny-tablet.webp, img/cat-skinny-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-skinny.webp, img/cat-skinny@2x.webp 2x" width="280"
+                  height="232">
                 <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png, img/cat-skinny-tablet@2x.png 2x">
                 <img class="example__image-after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="280"
                   height="232" alt="Худой котик.">
